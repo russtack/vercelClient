@@ -14,7 +14,7 @@ function App() {
 
   const addEmployee = () => {
     Axios.post(
-      "http://mysql://unqggf4lhx1upw77:n3hBFQ8bfgFDKnd9nDg2@b5xxd3uqpvktfh0mg1ff-mysql.services.clever-cloud.com:3306/b5xxd3uqpvktfh0mg1ff/create",
+      "https://mysql://unqggf4lhx1upw77:n3hBFQ8bfgFDKnd9nDg2@b5xxd3uqpvktfh0mg1ff-mysql.services.clever-cloud.com:3306/b5xxd3uqpvktfh0mg1ff/create",
       {
         date: date,
         firstname: firstName,
@@ -29,7 +29,7 @@ function App() {
 
   const getReport = () => {
     Axios.get(
-      "http://mysql://unqggf4lhx1upw77:n3hBFQ8bfgFDKnd9nDg2@b5xxd3uqpvktfh0mg1ff-mysql.services.clever-cloud.com:3306/b5xxd3uqpvktfh0mg1ff/report"
+      "https://mysql://unqggf4lhx1upw77:n3hBFQ8bfgFDKnd9nDg2@b5xxd3uqpvktfh0mg1ff-mysql.services.clever-cloud.com:3306/b5xxd3uqpvktfh0mg1ff/report"
     ).then((res) => {
       setReport(res.data);
       setShowButton(true); // set showButton to true when report is retrieved
