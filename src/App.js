@@ -28,9 +28,7 @@ function App() {
   };
 
   const getReport = () => {
-    Axios.get(
-      "https://b5xxd3uqpvktfh0mg1ff-mysql.services.clever-cloud.com:3306/report"
-    ).then((res) => {
+    Axios.get("https://vercel-server-ten.vercel.app/report").then((res) => {
       setReport(res.data);
       setShowButton(true); // set showButton to true when report is retrieved
       console.log(res.data);
