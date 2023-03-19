@@ -20,7 +20,7 @@ function App() {
       rating: rating,
     }).then(() => {
       console.log("success");
-      alert("Employee Added!");
+      alert("Employee Successfully Added!");
     });
   };
 
@@ -86,12 +86,17 @@ function App() {
             Retrieve report
           </Button>
           {report.map((val, key) => {
-            return <div key={key}>{val.firstname}</div>;
+            return (
+              <div key={key}>
+                Date:{val.date}, Name:{val.firstname} {val.lastname}, Rating:
+                {val.rating}
+              </div>
+            );
           })}
           {showButton && ( // conditional rendering of new button
             <Button
               className="mt-3"
-              onClick={() => alert("Report sent for approval")}
+              onClick={() => alert("Report successfully sent for approval!")}
             >
               Send report for approval
             </Button>
