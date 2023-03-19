@@ -13,15 +13,12 @@ function App() {
   const [showButton, setShowButton] = useState(false); // new state variable
 
   const addEmployee = () => {
-    Axios.post(
-      "https://b5xxd3uqpvktfh0mg1ff-mysql.services.clever-cloud.com:3306/create",
-      {
-        date: date,
-        firstname: firstName,
-        lastname: lastName,
-        rating: rating,
-      }
-    ).then(() => {
+    Axios.post("https://vercel-server-ten.vercel.app/create", {
+      date: date,
+      firstname: firstName,
+      lastname: lastName,
+      rating: rating,
+    }).then(() => {
       console.log("success");
       alert("Employee Added!");
     });
