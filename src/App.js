@@ -88,7 +88,7 @@ function App() {
           {report.map((val, key) => {
             return (
               <div key={key}>
-                Date:{val.date}, Name:{val.firstname} {val.lastname}, Rating:
+                Date: {val.date}, Name: {val.firstname} {val.lastname}, Rating:{" "}
                 {val.rating}
               </div>
             );
