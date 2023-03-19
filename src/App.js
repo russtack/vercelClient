@@ -14,7 +14,7 @@ function App() {
 
   const addEmployee = () => {
     Axios.post(
-      "mysql://unqggf4lhx1upw77:n3hBFQ8bfgFDKnd9nDg2@b5xxd3uqpvktfh0mg1ff-mysql.services.clever-cloud.com:3306/b5xxd3uqpvktfh0mg1ff/create",
+      "http://mysql://unqggf4lhx1upw77:n3hBFQ8bfgFDKnd9nDg2@b5xxd3uqpvktfh0mg1ff-mysql.services.clever-cloud.com:3306/b5xxd3uqpvktfh0mg1ff/create",
       {
         date: date,
         firstname: firstName,
