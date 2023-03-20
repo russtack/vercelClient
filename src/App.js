@@ -64,7 +64,7 @@ function App() {
               setLastName(event.target.value);
             }}
           />
-          <label htmlFor="rating">Rating</label>
+          <label htmlFor="rating">Rating(1 to 5)</label>
           <input
             type="number"
             id="rating"
